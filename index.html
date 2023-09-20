@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Add a border to the form group */
+    .form-group {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Change the submit button color to blue */
+    .btn-default {
+      background-color:rgb(0, 20, 57);
+      color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="btn-group btn-group-justified">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="btn btn-default" href="#hero">Hero</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-success" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-warning" href="#form">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-4 bg-primary text-white text-center" id="hero">
+    <h1>My First Bootstrap Page</h1>
+    <p>some tips for good sleep</p>
+  </div>
+
+  <div class="container mt-5" id="about">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Stick to a consistent sleep schedule</h3>
+        <p>Establishing a regular sleep schedule helps regulate your body's internal clock, known as the circadian rhythm. Try to go to bed and wake up at the same time every day, even on weekends. This consistency helps set a pattern and trains your body to recognize when it's time to sleep and when it's time to wake up.</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Create a sleep-friendly environment</h3>
+        <p>Your bedroom environment plays a crucial role in promoting good sleep. Make sure your bedroom is cool, quiet, and dark. Consider using curtains or blinds to block out external light. Use earplugs, a white noise machine, or a fan to drown out any noises that may disturb your sleep.</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Establish a relaxing bedtime routine</h3>
+        <p>A consistent bedtime routine signals to your body that it's time to unwind and prepare for sleep. Engage in calming activities leading up to bedtime, such as reading a book, taking a warm bath, practicing relaxation exercises like deep breathing or meditation, or listening to soft music. Avoid stimulating activities or screens that can make it harder to relax.</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Limit exposure to screens before bed:</h3>
+        <p>The blue light emitted by electronic devices, such as smartphones, tablets, and computers, can interfere with the production of melatonin, a hormone that helps regulate sleep. Avoid using screens at least an hour before bed. Instead, engage in relaxing activities that don't involve screens, such as reading a book or listening to calming music.</p>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+  <form id="form">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    </form>
+</body>
